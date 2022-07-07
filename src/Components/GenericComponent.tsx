@@ -21,14 +21,20 @@ export const PetSelection = <
   }, [pet, selectedPet, setSelectedPet]);
 
   return (
-    <div onClick={onSelectCallback}>
+    <div
+      onClick={onSelectCallback}
+      style={{
+        cursor: "pointer",
+        backgroundColor: selectedPet?.id === pet.id ? "#a6e3b6" : "#e3d1a6",
+      }}
+    >
       <h1>{pet.nickName}</h1>
       <p>
         This {pet.name} has {pet.legs} legs!
       </p>
       <p>
-        Their best friends are{" "}
-        {getsAlongWith.map((animal) => animal.nickName).join(" ,")}.
+        Their best friends are
+        {getsAlongWith.map((animal) => animal.nickName).join(", ")}.
       </p>
       <p>
         Please get in contact with their owner, {pet.owner.name} at{" "}

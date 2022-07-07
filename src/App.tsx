@@ -12,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 style={{ textAlign: "center" }}>Dogs</h1>
       {dogs.map((dog) => (
         <PetSelection
           setSelectedPet={setSelectedDog}
@@ -20,6 +21,8 @@ function App() {
           getsAlongWith={dogs.filter((d) => d.id !== dog.id)}
         />
       ))}
+
+      <h1 style={{ textAlign: "center" }}>Cats</h1>
       {cats.map((cat) => (
         <PetSelection
           setSelectedPet={setSelectedCat}
@@ -28,6 +31,8 @@ function App() {
           getsAlongWith={birds}
         />
       ))}
+
+      <h1 style={{ textAlign: "center" }}>Birds</h1>
       {birds.map((bird) => (
         <PetSelection
           setSelectedPet={setSelectedBird}
