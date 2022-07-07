@@ -15,20 +15,20 @@ function App() {
       <h1 style={{ textAlign: "center" }}>Dogs</h1>
       {dogs.map((dog) => (
         <PetSelection
+          getsAlongWith={cats}
           setSelectedPet={setSelectedDog}
           selectedPet={selectedDog}
           pet={dog}
-          getsAlongWith={dogs.filter((d) => d.id !== dog.id)}
         />
       ))}
 
       <h1 style={{ textAlign: "center" }}>Cats</h1>
       {cats.map((cat) => (
         <PetSelection
+          getsAlongWith={birds}
           setSelectedPet={setSelectedCat}
           selectedPet={selectedCat}
           pet={cat}
-          getsAlongWith={birds}
         />
       ))}
 

@@ -1,8 +1,8 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 import { Animal } from "../Interfaces/Interfaces";
 
 interface GenericPetSelectionProps<T, U> {
-  setSelectedPet: Dispatch<SetStateAction<T | null>>;
+  setSelectedPet: (pet: T | null) => void;
   selectedPet: T | null;
   pet: T;
   getsAlongWith: U[];
@@ -35,10 +35,6 @@ export const PetSelection = <
       <p>
         Their best friends are
         {getsAlongWith.map((animal) => animal.nickName).join(", ")}.
-      </p>
-      <p>
-        Please get in contact with their owner, {pet.owner.name} at{" "}
-        {pet.owner.address}, if you'd like to meet them!
       </p>
     </div>
   );

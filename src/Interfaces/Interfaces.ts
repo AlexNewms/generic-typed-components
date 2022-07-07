@@ -3,7 +3,6 @@ export interface Animal {
     name: string;
     nickName: string;
     legs: number;
-    owner: Owner
 }
 
 export interface Dog extends Animal {
@@ -22,9 +21,4 @@ export interface Cat extends Animal {
 export interface Bird extends Animal {
     legs: 2;
     canTalk: boolean;
-}
-
-export interface Owner {
-    name: string;
-    address: string;
 }

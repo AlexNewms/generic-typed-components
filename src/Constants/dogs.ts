@@ -8,10 +8,6 @@ export const dogs: Dog[] = [{
    size: "large",
    nickName: "Geoffrey",
    legs: 4,
-   owner: {
-    name: "Jeff",
-    address: "Manchester"
-   }
 },{
     id: "dog-2",
     name: "dog",
@@ -20,10 +16,7 @@ export const dogs: Dog[] = [{
     size: "small",
     nickName: "Chip",
     legs: 4,
-    owner: {
-        name: "Hollie",
-        address: "Balham"
-       }
+    
  },{
     id: "dog-3",
     name: "dog",
@@ -32,10 +25,7 @@ export const dogs: Dog[] = [{
     size: "medium",
     nickName: "Alex",
     legs: 4,
-    owner: {
-        name: "Robin",
-        address: "Kent"
-       }
+    
  },{
     id: "dog-4",
     name: "dog",
@@ -44,8 +34,5 @@ export const dogs: Dog[] = [{
     size: "large",
     nickName: "Greg",
     legs: 4,
-    owner: {
-        name: "Susan",
-        address: "London"
-       }
+    
  }]

@@ -7,10 +7,6 @@ export const cats: Cat[] = [{
    disposition: "grumpy",
    foodPreference: "fish",
    legs: 4,
-   owner: {
-    name: "Jeremy",
-    address: "Manchester"
-   }
 },{
     id: "cat-2",
    name: "cat",
@@ -18,10 +14,6 @@ export const cats: Cat[] = [{
    disposition: "happy",
    foodPreference: "fish",
    legs: 4,
-   owner: {
-    name: "Arnold",
-    address: "Liverpool"
-   }
  },{
     id: "cat-3",
    name: "cat",
@@ -29,10 +21,6 @@ export const cats: Cat[] = [{
    disposition: "grumpy",
    foodPreference: "treats",
    legs: 4,
-   owner: {
-    name: "David",
-    address: "Glasgow"
-   }
  },{
     id: "cat-4",
    name: "cat",
@@ -40,8 +28,4 @@ export const cats: Cat[] = [{
    disposition: "happy",
    foodPreference: "fish",
    legs: 4,
-   owner: {
-    name: "Penelope",
-    address: "Cornwall"
-   }
  }]

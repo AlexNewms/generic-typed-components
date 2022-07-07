@@ -1,16 +1,15 @@
 import React from "react";
-import { Dog, Owner } from "../Interfaces/Interfaces";
+import { Dog } from "../Interfaces/Interfaces";
 
 interface DogPetSelectionProps {
   setSelectedPet: (pet: Dog | null) => void;
   selectedPet: Dog;
   pet: Dog;
-  otherDogs: { friends: Dog[]; enemies: Dog[] };
-  owner: Owner;
+  friends: Dog[];
 }
 
 export const DogPetSelection = (props: DogPetSelectionProps) => {
-  const { setSelectedPet, selectedPet, pet, otherDogs, owner } = props;
+  const { setSelectedPet, selectedPet, pet, friends } = props;
 
   const onSelectCallback = React.useCallback(() => {
     selectedPet === pet ? setSelectedPet(null) : setSelectedPet(pet);
@@ -22,14 +21,7 @@ export const DogPetSelection = (props: DogPetSelectionProps) => {
       <p>
         This {pet.name} has {pet.legs} legs!
       </p>
-      <p>
-        Their best friends are {otherDogs.friends.join(" ,")}, but they don't
-        get along with {otherDogs.enemies.join(" ,")}.
-      </p>
-      <p>
-        Please get in contact with their owner, {owner.name} at {owner.address},
-        if you'd like to meet them!
-      </p>
+      <p>Their best friends are {friends.map((d) => d.nickName).join(" ,")}.</p>
     </div>
   );
 };
