@@ -4,7 +4,9 @@ Details for how to create more generic components in Typescript. Allowing you to
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can install packages and run the app with:
+
+### `npm install`
 
 ### `npm start`
 
