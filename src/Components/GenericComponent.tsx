@@ -8,10 +8,7 @@ interface GenericPetSelectionProps<T, U> {
   getsAlongWith: U[];
 }
 
-export const PetSelection = <
-  T extends Required<Animal>,
-  U extends Required<Animal>
->(
+export const PetSelection = <T extends Animal, U extends Animal>(
   props: GenericPetSelectionProps<T, U>
 ) => {
   const { setSelectedPet, selectedPet, pet, getsAlongWith } = props;

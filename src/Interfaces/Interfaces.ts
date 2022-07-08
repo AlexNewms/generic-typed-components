@@ -1,7 +1,7 @@
 export interface Animal {
     id: `${string}-${number}`;
     name: string;
-    nickName: string;
+    nickName?: string;
     legs: number;
 }
 
